@@ -11,9 +11,9 @@ tax = 12.5 / 100
 price = 100.50
 print(price * tax)
 
-# ÀÎÅÍ·ºÆ¼ºê ¸ðµå¿¡¼­ ¹ØÁÙ(_)Àº °¡Àå ¸¶Áö¸·¿¡ Ãâ·ÂµÈ °ªÀ» º¸°üÇÏ´Â º¯¼öÀÌ´Ù.
-# print(price + _)
-# °á°ú´Â 113.0625 °¡ ³ª¿Â´Ù.
+#
+#
+#
 
 print(round(price, 2))
 
@@ -26,7 +26,7 @@ print(round(price, 2))
 print("\n - NUMBERS - ")
 print(2+2)      # int
 print(50-5+6)   # int
-# / ³ª´©±â´Â Ç×»ó float ¸®ÅÏ
+# / ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×»ï¿½ float ï¿½ï¿½ï¿½ï¿½
 print((50-5*6)/4)   # float
 print(8/5)          # float
 
