@@ -1,5 +1,4 @@
-
-by lezo
+﻿by lezo
 
 #Numbers
 ```
@@ -43,5 +42,3 @@ word[:2] + word[2:]
 len(word)
 6
 ```
-
-
