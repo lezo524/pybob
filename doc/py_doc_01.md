@@ -1,7 +1,7 @@
 ﻿by lezo, xell
 
-Python 소개
-
+#Python 소개
+```
 primary prompt: >>>
 
 
@@ -15,7 +15,7 @@ primary prompt: >>>
 
 -> 명령어 첫줄에 코맨트를 쓸수있고, 공백( whitespace ) 또는 코드 다음에도 쓸 수 있다.
    하지만 문자열 안에서는 단순한 '#'문자이므로 주석의 기능으로 쓸수없다.
-
+```
 
 #Numbers
 ```
@@ -24,18 +24,15 @@ primary prompt: >>>
 10 % 3 --> 소수부 --> 나머지만 출력
 -> 정수( 10, 2, 3 )는 int 타입
 
-
 5/3 --> 나눗셈의 결과는 항상 float이다.
 1.6666666666666667
 round(_, 2)
 1.67
-```
 -> 소수(1.67)는 float 타입.
 
-
->>> width = 20
->>> height = 5 * 9
->>> width * height
+width = 20
+height = 5 * 9
+width * height
 900
 -> = 은 어떤 값을 변수에 대입한다.
    변수에 값을 대입하지 않으면 오류가 난다.
@@ -48,6 +45,7 @@ floating point: 부동소수점
 
 complex numbers: 복소수
 -> 실수와 허수의 합으로 이루어지는 수
+```
 
 
 #Strings
