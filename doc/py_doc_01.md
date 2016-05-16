@@ -50,6 +50,10 @@ complex numbers: 복소수
 
 #Strings
 ```
+strings are immutable.
+name = 'Python'
+name[0] = 'p' --> error
+
 인터렉트브 모드에서 밑줄(_) 의미
 -> The last printed expression assigned.
 
@@ -59,7 +63,8 @@ raw string 사용 : 줄바꿈(\n) 되지 않는다.
 
 'aa' * 3 --> aa 3회 반복
 
-ex)
+
+
  +---+---+---+---+---+---+
  | P | y | t | h | o | n |
  +---+---+---+---+---+---+
@@ -76,6 +81,74 @@ word[-2] --> characters from the second-last (included) to the end
 'on'
 word[:2] + word[2:]
 'Python'
+word[:]
+'Python'
 len(word)
 6
+```
+
+#List
+```
+lists are a mutable.
+
+cubes = [1, 8, 27, 65, 125]
+cubes[3] = 64
+cubes
+[1, 8, 27, 64, 125]
+
+cubes + [999]
+[1, 8, 27, 64, 125, 999]
+
+cubes.append(256)
+cubes
+[1, 8, 27, 64, 125, 256]
+
+len(cubes)
+6
+```
+
+```
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+letters
+['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+# replace some values
+letters[2:5] = ['C', 'D', 'E']
+letters
+['a', 'b', 'C', 'D', 'E', 'f', 'g']
+
+# now remove them
+letters[2:5] = []
+letters
+['a', 'b', 'f', 'g']
+
+# clear the list by replacing all the elements with an empty list
+letters[:] = []
+letters
+[]
+```
+
+```
+피보나치 수열
+01 >>> a, b = 0, 1
+02 >>> while b < 1000:
+03 ...     print(b, end=',')
+04 ...     a, b = b, a+b
+05 ...
+06 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,
+
+설명
+01 : a, b 동시 할당
+02 : 콜론(:) 으로 멀티라인 시작
+03 : print는 항상 마지막에 줄바꿈이 되는데, end 키워드를 적으면 줄바꿈이 일어나지 않는다.
+     여기서는 end에 ',' 할당하여 줄바꿈 대신 ',' 출력 
+03 ~ 04 : 공백, 탭 등으로 멀티라인 지속
+05 : 멀티라인 종료
+06 : 결과
+```
+
+#Footnotes
+```
+[1]	Since ** has higher precedence than -, -3**2 will be interpreted as -(3**2) and thus result in -9. To avoid this and get 9, you can use (-3)**2.
+[2]	Unlike other languages, special characters such as \n have the same meaning with both single ('...') and double ("...") quotes. The only difference between the two is that within single quotes you don’t need to escape " (but you have to escape \') and vice versa.
 ```
