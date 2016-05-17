@@ -50,6 +50,17 @@ complex numbers: 복소수
 
 #Strings
 ```
+문자열은 작은 따옴표( '...' )또는 큰 따옴표로( "..." ) 감쌀 수 있다.
+
+>>> print('People's honor.')
+SyntaxError: invalid syntax
+>>>
+>>> print('People\'s honor.')
+People's honor.
+>>>
+작은 따옴표안에 작은 따옴표를 표시하려면 \' 를 써야한다.
+큰 따옴표도 같은 방식으로 써야한다.
+
 strings are immutable.
 name = 'Python'
 name[0] = 'p' --> error
