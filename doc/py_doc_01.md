@@ -79,6 +79,7 @@ Usage: thingy [OPTIONS]
          -H  hostname           Hostname to connect to
 
 >>>
+ -> 개행 문자 기능을 사용 하려면 문장 첫 줄 마지막에 \ 를 붙인다.
 ```
 
 ```
