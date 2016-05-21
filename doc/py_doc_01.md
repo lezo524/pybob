@@ -21,7 +21,7 @@ primary prompt: >>>
 ```
 10 ** 2 --> 10^2 의미
 10 // 3 --> 정수부만 출력
-10 % 3 --> 소수부 --> 나머지만 출력
+10 % 3 --> 나머지만 출력
 -> 정수( 10, 2, 3 )는 int 타입
 
 5/3 --> 나눗셈의 결과는 항상 float이다.
@@ -29,6 +29,9 @@ primary prompt: >>>
 round(_, 2)
 1.67
 -> 소수(1.67)는 float 타입.
+
+인터렉트브 모드에서 밑줄(_) 의미
+-> The last printed expression assigned.
 
 width = 20
 height = 5 * 9
@@ -86,9 +89,6 @@ Usage: thingy [OPTIONS]
 strings are immutable.
 name = 'Python'
 name[0] = 'p' --> error
-
-인터렉트브 모드에서 밑줄(_) 의미
--> The last printed expression assigned.
 
 raw string 사용 : 줄바꿈(\n) 되지 않는다.
 -> print(r'abcd\nabcd')
