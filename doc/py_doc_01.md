@@ -30,6 +30,9 @@ round(_, 2)
 1.67
 -> 소수(1.67)는 float 타입.
 
+인터렉트브 모드에서 밑줄(_) 의미
+-> The last printed expression assigned.
+
 width = 20
 height = 5 * 9
 width * height
@@ -86,9 +89,6 @@ Usage: thingy [OPTIONS]
 strings are immutable.
 name = 'Python'
 name[0] = 'p' --> error
-
-인터렉트브 모드에서 밑줄(_) 의미
--> The last printed expression assigned.
 
 raw string 사용 : 줄바꿈(\n) 되지 않는다.
 -> print(r'abcd\nabcd')
