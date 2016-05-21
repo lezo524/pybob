@@ -61,6 +61,28 @@ People's honor.
 작은 따옴표안에 작은 따옴표를 표시하려면 \' 를 써야한다.
 큰 따옴표도 같은 방식으로 써야한다.
 
+문자열은 여러줄에 걸쳐 쓸 수 있다.
+여러줄을 쓰기위해 """.....""" 또는 '''.....'''를 사용 할 수 있다.
+
+>>> '''Constantly look at yourself and learn
+...    the rights and wrongs you have done.'''
+'Constantly look at yourself and learn\n   the rights and wrongs you have done.'
+ -> 개행 문자(end of line)는 항상 그 문자열에 포함된다.
+ 
+>>> print("""\
+... Usage: thingy [OPTIONS]
+...      -h                     Display this usage message
+...      -H  hostname           Hostname to connect to
+... """)
+Usage: thingy [OPTIONS]
+         -h                     Display this usage message
+         -H  hostname           Hostname to connect to
+
+>>>
+ -> 개행 문자 기능을 사용 하려면 문장 첫 줄 마지막에 \ 를 붙인다.
+```
+
+```
 strings are immutable.
 name = 'Python'
 name[0] = 'p' --> error
@@ -73,9 +95,9 @@ raw string 사용 : 줄바꿈(\n) 되지 않는다.
 'abcd\nabcd'
 
 'aa' * 3 --> aa 3회 반복
+```
 
-
-
+```
  +---+---+---+---+---+---+
  | P | y | t | h | o | n |
  +---+---+---+---+---+---+
