@@ -5,11 +5,6 @@
 primary prompt: >>>
 
 
-두번째 prompt 그리고 라인 추가 입력시: ...
-
--> 여러줄을 입력하고 마지막 ... prompt에서 키입력 없이 엔터를 입력해
-   해당명령셋을 끝낸다.
-
 
 주석(코맨트): #(hash character)로 시작한다.
 
@@ -51,7 +46,19 @@ complex numbers: 복소수
 ```
 
 
-#Strings
+#Strings (strings are immutable.)
+```
+name = 'Python'
+name[0] = 'p' --> error
+
+raw string 사용 : 줄바꿈(\n) 되지 않는다.
+-> print(r'abcd\nabcd')
+'abcd\nabcd'
+
+'aa' * 3 --> aa 3회 반복
+```
+
+
 ```
 문자열은 작은 따옴표( '...' )또는 큰 따옴표로( "..." ) 감쌀 수 있다.
 
@@ -85,17 +92,6 @@ Usage: thingy [OPTIONS]
  -> 개행 문자 기능을 사용 하려면 문장 첫 줄 마지막에 \ 를 붙인다.
 ```
 
-```
-strings are immutable.
-name = 'Python'
-name[0] = 'p' --> error
-
-raw string 사용 : 줄바꿈(\n) 되지 않는다.
--> print(r'abcd\nabcd')
-'abcd\nabcd'
-
-'aa' * 3 --> aa 3회 반복
-```
 
 ```
  +---+---+---+---+---+---+
@@ -120,10 +116,8 @@ len(word)
 6
 ```
 
-#List
+#List (lists are mutable.)
 ```
-lists are a mutable.
-
 cubes = [1, 8, 27, 65, 125]
 cubes[3] = 64
 cubes
