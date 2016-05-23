@@ -74,8 +74,8 @@ People's honor.
 
 >>> '''Constantly look at yourself and learn
 ...    the rights and wrongs you have done.'''
-'Constantly look at yourself and learn\n   the rights and wrongs you have done.'
- -> 개행 문자(end of line)는 항상 그 문자열에 포함된다.
+'Constantly look at yourself and learn**\n**   the rights and wrongs you have done.'
+ -> 줄바꿈(end of line)은 항상 그 문자열에 포함된다.
  
 >>> print("""\
 ... Usage: thingy [OPTIONS]
@@ -87,7 +87,7 @@ Usage: thingy [OPTIONS]
          -H  hostname           Hostname to connect to
 
 >>>
- -> 개행 문자 기능을 사용 하려면 문장 첫 줄 마지막에 \ 를 붙인다.
+ -> 줄바꿈 기능을 사용 하려면 문장 첫 줄 마지막에 \ 를 붙인다.
  
    문자열은 여러줄에 걸쳐 쓸 수 있고 """.....""" 또는 '''.....'''를 사용한다.
 ```
